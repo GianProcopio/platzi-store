@@ -5,10 +5,6 @@ id 3 = furniture
 id 4 = show 
 id 5 = others
 */
-window.onload = ()=>{
-    $('#onload').fadeOut();
-    $('#body').removeClass("hidden")
-}
 const API = "https://api.escuelajs.co/api/v1/products";
 const categoriesURL = "https://api.escuelajs.co/api/v1/products/?categoryId=" 
 
@@ -23,7 +19,6 @@ const shoes = document.getElementById('shoes')
 const others = document.getElementById('others')
 const categoryTitle = document.getElementById('category-title');
 
-// window.addEventListener('load', load)
 
 btn.addEventListener('click', ()=>{
     menu.classList.toggle('show-menu');
@@ -123,5 +118,3 @@ function buy(){
 load(API)
 getData()
 
-
-//preloader
